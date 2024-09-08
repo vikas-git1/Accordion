@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is the difference between `var`, `let`, and `const`?",
+    "answer": "In JavaScript, `var` is function-scoped, while `let` and `const` are block-scoped. `let` and `const` were introduced in ES6 to provide better scoping rules. `const` is used for variables that should not be reassigned after their initial value is set."
+  },
+  {
+    "question": "What is a closure in JavaScript?",
+    "answer": "A closure is a feature in JavaScript where an inner function has access to its own scope, the scope of the outer function, and the global scope. Closures are created every time a function is created."
+  },
+  {
+    "question": "What is the difference between `==` and `===`?",
+    "answer": "`==` compares two values for equality after converting both values to a common type (type coercion). `===` checks for strict equality, meaning both the value and the type must be the same."
+  },
+  {
+    "question": "What is the purpose of the `this` keyword in JavaScript?",
+    "answer": "`this` refers to the object that is currently calling the function. The value of `this` changes depending on how the function is called (e.g., as a method, function, constructor, or via `call`, `apply`, or `bind`)."
+  },
+  {
+    "question": "What are arrow functions and how do they differ from regular functions?",
+    "answer": "Arrow functions are a more concise syntax for writing functions in ES6. Unlike regular functions, they do not have their own `this` context; instead, they inherit `this` from the surrounding lexical scope."
+  },
+  {
+    "question": "What is event delegation?",
+    "answer": "Event delegation is a technique where you add a single event listener to a parent element to manage events triggered by its child elements. This is efficient for handling events on multiple elements."
+  },
+  {
+    "question": "How does `async`/`await` work in JavaScript?",
+    "answer": "`async`/`await` is a way to write asynchronous code that looks synchronous. An `async` function returns a promise, and `await` pauses the execution of the function until the promise is resolved."
+  },
+  {
+    "question": "What is the difference between `null` and `undefined`?",
+    "answer": "`undefined` means a variable has been declared but not yet assigned a value. `null` is an assignment value that represents 'no value' or 'nothing'."
+  },
+  {
+    "question": "What is the purpose of the `Promise` object in JavaScript?",
+    "answer": "A `Promise` is an object representing the eventual completion or failure of an asynchronous operation. It allows you to write asynchronous code in a more manageable way using `.then()` and `.catch()`."
+  },
+  {
+    "question": "What is hoisting in JavaScript?",
+    "answer": "Hoisting is JavaScript's default behavior of moving declarations to the top of the current scope. Functions and variables are hoisted, but `let` and `const` do not allow their declarations to be hoisted."
+  }
+]

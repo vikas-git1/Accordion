@@ -1,0 +1,99 @@
+h1 {
+  color: white;
+  background-color: #1e1e1e;
+  text-align: center;
+  font-size: 45px;
+  text-decoration: underline;
+  margin-top: 0;
+  padding: 20px;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+}
+
+.Faq__Conatiner {
+  margin: 10rem 4rem;
+  padding: 2rem;
+  background: #2c2c2c;
+  border-radius: 10px;
+  opacity: 0; /* Start with the container hidden */
+  animation: fadeInContainer 1s ease-in-out forwards; /* Apply fade-in animation */
+}
+
+/* Keyframes for fading in the container */
+@keyframes fadeInContainer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.Accordian__container {
+  background: #3a3a3a;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.Accordian__container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+h2 span {
+  font-size: 30px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.2rem 0.8rem;
+  border-radius: 10px;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+h2 span:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Keyframes for slide-down and fade-in effect */
+@keyframes slideDownFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+p {
+  margin: 1rem 0;
+  color: #dcdcdc;
+  font-size: 17px;
+  line-height: 1.5;
+  opacity: 0;
+  transition: opacity 0.3s ease, max-height 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+p.show {
+  animation: slideDownFadeIn 0.5s ease forwards; /* Apply animation */
+  max-height: 500px; /* Adjust this value according to the expected content length */
+  opacity: 1; /* Ensure the final opacity is 1 */
+}
