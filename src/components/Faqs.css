@@ -14,8 +14,8 @@ h1 {
 }
 
 .Faq__Conatiner {
-  margin: 10rem 4rem;
-  padding: 2rem;
+  margin: 10rem 15rem;
+  padding: 2rem 5rem;
   background: #2c2c2c;
   border-radius: 10px;
   opacity: 0; /* Start with the container hidden */
